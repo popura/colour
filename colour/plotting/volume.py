@@ -364,6 +364,7 @@ def RGB_identity_cube(plane=None,
 
 @override_style()
 def plot_RGB_colourspaces_gamuts(colourspaces=None,
+                                 apply_cctf=False,
                                  reference_colourspace='CIE xyY',
                                  segments=8,
                                  show_grid=True,
@@ -491,6 +492,7 @@ def plot_RGB_colourspaces_gamuts(colourspaces=None,
             colourspace.whitepoint,
             colourspace.whitepoint,
             colourspace.RGB_to_XYZ_matrix,
+            if apply_ccrf is colourspace.cctf_decoding else None
         )
 
         quads.extend(
