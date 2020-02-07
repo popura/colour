@@ -145,7 +145,7 @@ extras_require = \
                    'sphinxcontrib-bibtex']}
 
 setup(
-    name='colour-science',
+    name='colour',
     version='0.3.15',
     description='Colour Science for Python',
     long_description=open('README.rst').read(),
