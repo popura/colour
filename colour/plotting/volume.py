@@ -492,7 +492,7 @@ def plot_RGB_colourspaces_gamuts(colourspaces=None,
             colourspace.whitepoint,
             colourspace.whitepoint,
             colourspace.RGB_to_XYZ_matrix,
-            if apply_cctf is colourspace.cctf_decoding else None
+            colorspace.cctf_decoding if apply_cctf else None
         )
 
         quads.extend(
